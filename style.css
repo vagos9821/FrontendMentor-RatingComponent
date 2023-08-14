@@ -1,0 +1,154 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/*--------------------------------- Start rating */
+
+
+/* Coloring */
+
+body {
+    background-color: #141519;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    color: white
+}
+
+#star {
+    background-color: #262F38;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#r1,
+#r2,
+#r3,
+#r4,
+#r5 {
+    background-color: #262F38;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    color: #7C8898;
+    font-weight: 600;
+}
+
+#submit {
+    background-color: #FC7613;
+    border-radius: 50px;
+    height: 40px;
+    font-weight: 600;
+}
+
+
+/* Placing */
+
+#card {
+    padding: 1.5em;
+    height: 400px;
+    width: 400px;
+    background: #222933;
+    background: radial-gradient(at center top, #222933, #171F28);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Typography */
+
+#title {
+    font-size: 24px;
+}
+
+#details {
+    font-size: 15px;
+    opacity: 75%;
+}
+
+
+/* --------------On Hover - Ative States */
+
+#r1:hover,
+#r2:hover,
+#r3:hover,
+#r4:hover,
+#r5:hover {
+    background-color: #FC7613;
+    color: white;
+}
+
+#r1:focus,
+#r2:focus,
+#r3:focus,
+#r4:focus,
+#r5:focus {
+    background-color: #7C8898;
+    color: white;
+}
+
+#submit:hover {
+    color: #FC7613;
+    background-color: white;
+}
+
+
+/* ---------------------Thnak you state */
+
+#thanks {
+    z-index: -1;
+    opacity: 0;
+    padding: 0em;
+    height: 00px;
+    width: 400px;
+    background: #222933;
+    background: radial-gradient(at center top, #222933, #171F28);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#phone {
+    display: flex;
+    justify-content: center;
+}
+
+#selection {
+    background-color: #262F38;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: .5em 1.5em;
+    color: #FC7613;
+    margin-bottom: .5em;
+}
+
+#thankyou {
+    font-size: 24px;
+    text-align: center;
+}
+
+#tydetails {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 75%;
+}
